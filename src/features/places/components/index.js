@@ -20,8 +20,20 @@ const styles = StyleSheet.create({
   content: {
     flex: 0,
     alignItems: "center"
-  }
+  },
+  container: {
+    ...StyleSheet.absoluteFillObject,
+    height: 400,
+    width: 400,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+    height: 500,
+  },
 });
+
 
 const Places = props => (
   <View style={styles.root}>
